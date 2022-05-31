@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body">
+    <div class="body-container">
+        <header class="header">
+            <div class="header-container">
+                <figure class="header__logo">
+                    <span class="fas fa-bars header__logo-img"></span>
+                    <p class="header__logo-title">STD</p>
+                </figure>
+                <nav class="header-nav">
+                    <ul class="header-nav__menu-list">
+                        <li class="header-nav__menu-item"><a class="header-nav__menu-link" href=""><i
+                                    class="far fa-clock"></i></a></li>
+                        <li class="header-nav__menu-item"><a class="header-nav__menu-link" href=""><i
+                                    class="fas fa-users"></i></a></li>
+                        <li class="header-nav__menu-item"><a class="header-nav__menu-link" href=""><i
+                                    class="far fa-envelope"></i></a></li>
+                        <li class="header-nav__menu-item"><a class="header-nav__menu-link" href=""><span
+                                    class="fa fa-share"></span></a></li>
+                        <li class="header-nav__menu-item"><a class="header-nav__menu-link" href=""><span
+                                    class="fas fa-bolt"></span></a></li>
+                        <li class="header-nav__menu-item"><a class="header-nav__menu-link" href=""><span
+                                    class="fa fa-search"></span></a></li>
+                        <li class="header-nav__menu-item"><a class="header-nav__menu-link" href=""><span
+                                    class="label label-primary"> PERFIL &nbsp;PROFESIONAL</span></a></li>
+                        <li class="header-nav__menu-item"><a class="header-nav__menu-link" href=""><span
+                                    class="label label-danger">CERRAR SESIÓN</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main-container">
+                <form class="main__form">
+                    <div class="main__form-group-select">
+                        <label class="main__form-label">Tipo de Documento:</label>
+
+                        <select class="main__form-select-document-type">
+                            <option value="">Acta de Conformidad de la prestacion</option>
+                            <option value="">Cargos</option>
+                            <option value="">Certificacion de credito presupuestario</option>
+                            <option value="">Circular</option>
+                            <option value="">Comunicacion Interna</option>
+                        </select>
+                    </div>
+                    <div class="main__form-group-input">
+                        <label class="main__form-label">Fecha de Registro:</label>
+                        <input class="main__form-text" type="text" />
+                    </div>
+                    <div class="main__form-group-text-area">
+                        <label class="main__form-label">Asunto:</label>
+                        <textarea class="main__form-text" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="main__form-group-text-area">
+                        <label class="main__form-label">Observaciones:</label>
+                        <textarea class="main__form-text" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="main__form-group-input">
+                        <label class="main__form-label">folios:</label>
+                        <input class="main__form-text" type="text" />
+                    </div>
+                    <div class="main__form-group-button">
+                        <label class="main__form-label">Referencias:</label>
+                        <button>Añadir Referencia</button>
+                    </div>
+                    <div class="main__form-group-input">
+                        <label>Adjuntar Archivo(Menores o iguales a 15MB)</label>
+                        <input class="main__form-file" type="file" />
+                    </div>
+                    <button>Subir mas Archivos</button>
+                    <div class="main__form-group-input">
+                        <label class="main__form-label">Enlace de archivos para archivos mayores a 15MB:</label>
+                        <input class="main__form-text" type="text" />
+                    </div>
+                    <div class="main__form-group-select">
+                        <label class="main__form-label">Documento:</label>
+                        <select class="main__form-select-document-address">
+                            <option value="">Seleccione</option>
+                            <option value="">Oficina</option>
+                            <option value="">Personal</option>
+                        </select>
+                    </div>
+                    <div class="main__form-group-select">
+                        <label class="main__form-label">Oficina</label>
+                        <select class="main__form-select-office">
+                            <option value="">Seleccione Oficina</option>
+                            <option value="">Adquisiciones</option>
+                            <option value="">Almacen</option>
+                            <option value="">Asesoria Legal Direccion Academica</option>
+                            <option value="">Biblioteca</option>
+                        </select>
+                    </div>
+                    <select class="main__form-select-office-worker">
+                        <option value="">Joseph Peñafiel</option>
+                    </select>
+
+                    <select class="main__form-select-document-indication">
+                        <option value="">01 Urgente</option>
+                        <option value="">02 Para conocimiento y fines </option>
+                        <option value="">03 Tramite Respectivo</option>
+                        <option value="">04 Docuemnto Autorizado</option>
+                        <option value="">05 Emitir Informe</option>
+                    </select>
+                    <select class="main__form-select-document-priority">
+                        <option value="">Alta</option>
+                        <option value="">Media</option>
+                        <option value="">Baja</option>
+                    </select>
+
+                </form>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <h2>Nombres y Apellidos</h2>
+                <p>Sistema de Tramite Documentario 3.0.0.20201201 | AMAG - 2022</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

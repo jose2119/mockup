@@ -1,0 +1,150 @@
+.body{
+    margin: 0;
+    height: 100vh;
+    background: #5a5af1;
+    overflow-y: hidden;
+}
+
+
+.body-container{
+    padding: 1.25rem;
+    /* background-color:; */
+    display: grid;
+    gap: 20px;
+    min-height: 100%; 
+    grid-template-areas: "header"
+                         "main "
+                         "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr 70px;
+    /* grid-template-columns: min-content 1fr 1fr;
+    grid-template-rows:60px 1fr 1fr; */
+}
+/*Header*/
+.header{
+/* padding: 0 1.5rem; */
+grid-area: header;
+padding: 0 1rem;
+border: 0.25rem solid black;
+}
+.header-container{
+    max-height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo{
+    margin: 0;
+    display: flex;
+    gap:0.5rem;
+    align-items: center;
+}
+
+.header__logo-img{
+font-size: 20px;
+}
+
+.header__logo-title{
+    margin: 0;
+    font-size: 20px;
+}
+.header-nav__menu-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+}
+.header-nav__menu-item{
+padding: 1rem;
+}
+
+.header-nav__menu-link{
+    text-decoration: none;
+    color: rgb(191, 255, 0);
+}
+/*main*/
+.main{
+grid-area:main;
+}
+
+.main__form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main__form-group-select{
+    width: 400px;
+    display: flex;
+    gap: 1rem;
+}
+
+.main__form-label{
+align-self: center;
+}
+
+
+.main__form-group-input{
+    width: 400px;
+    display: flex;
+    gap: 1rem;
+}
+
+.main__form-label{
+    align-self: center;
+}
+.main__form-text{
+    align-self: center;
+}
+
+.main__form-select-document-type{
+    align-self: center;
+}
+/*Footer*/
+.footer{
+grid-area:footer;
+}
+
+
+
+/* .header-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+width: 100%;
+min-width: 900px;
+}
+
+
+.header__logo{
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.header__logo-title{
+    margin: 0;
+}
+
+.header-nav{
+}
+.header-nav__menu-list{
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.header-nav__menu-item{
+    list-style: none;
+    padding: 1.3rem;
+    
+}
+
+.header-nav__menu-link{
+    text-decoration: none;
+    color: rgb(51, 158, 114);
+} */
+
+
