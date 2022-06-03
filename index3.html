@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/css/index1.css">
+    <!-- <link rel="stylesheet" href="styles/css/newstyle2.css"> -->
+    <!--Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body class="body">
@@ -34,10 +39,10 @@
                                     class="fas fa-bolt"></span></a></li>
                         <li class="header-nav__menu-item"><a class="header-nav__menu-link" href=""><span
                                     class="fa fa-search"></span></a></li>
-                        <li class="header-nav__menu-item"><a class="header-nav__menu-link" href=""><span
-                                    class="label label-primary"> PERFIL &nbsp;PROFESIONAL</span></a></li>
-                        <li class="header-nav__menu-item"><a class="header-nav__menu-link" href=""><span
-                                    class="label label-danger">CERRAR SESIÓN</span></a></li>
+                        <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="">PERFIL
+                                PROFESIONAL</a></li>
+                        <li class="header-nav__menu-item"><a class="header-nav__menu-link" href="">CERRAR SESIÓN</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -56,32 +61,38 @@
                             <option value="">Comunicacion Interna</option>
                         </select>
                     </div>
-                    <div class="main__form-group-input">
+                    <div class="main__form-group-input-text">
                         <label class="main__form-label">Fecha de Registro:</label>
                         <input class="main__form-text" type="text" />
                     </div>
                     <div class="main__form-group-text-area">
                         <label class="main__form-label">Asunto:</label>
-                        <textarea class="main__form-text" cols="30" rows="10"></textarea>
+                        <textarea class="main__form-text-area"></textarea>
                     </div>
                     <div class="main__form-group-text-area">
                         <label class="main__form-label">Observaciones:</label>
-                        <textarea class="main__form-text" cols="30" rows="10"></textarea>
+                        <textarea class="main__form-text-area"></textarea>
                     </div>
-                    <div class="main__form-group-input">
-                        <label class="main__form-label">folios:</label>
+                    <div class="main__form-group-input-text">
+                        <label class="main__form-label">Folios:</label>
                         <input class="main__form-text" type="text" />
                     </div>
                     <div class="main__form-group-button">
                         <label class="main__form-label">Referencias:</label>
-                        <button>Añadir Referencia</button>
+                        <button class="main__form-button">Añadir Referencia</button>
                     </div>
-                    <div class="main__form-group-input">
-                        <label>Adjuntar Archivo(Menores o iguales a 15MB)</label>
-                        <input class="main__form-file" type="file" />
+                    <div class="main__form-group-input-file">
+                        <label class="main__form-label">Adjuntar Archivo(Menores o iguales a 15MB)</label>
+                        <div class="main_form-input-file-container">
+                            <button class="main_form-input-file-container-button" disabled>
+                                <span class="fas fa-upload main__form-input-file-icon">Subir Archivo</span>
+                                <input class="main__form-file" type="file" />
+                            </button>
+                        </div>
+                        <button class="main__form-button">Subir mas Archivos</button>
                     </div>
-                    <button>Subir mas Archivos</button>
-                    <div class="main__form-group-input">
+
+                    <div class="main__form-group-input-text">
                         <label class="main__form-label">Enlace de archivos para archivos mayores a 15MB:</label>
                         <input class="main__form-text" type="text" />
                     </div>
@@ -102,32 +113,33 @@
                             <option value="">Asesoria Legal Direccion Academica</option>
                             <option value="">Biblioteca</option>
                         </select>
+
+                        <select class="main__form-select-office-worker">
+                            <option value="">Joseph Peñafiel</option>
+                        </select>
+
+                        <select class="main__form-select-document-indication">
+                            <option value="">01 Urgente</option>
+                            <option value="">02 Para conocimiento y fines </option>
+                            <option value="">03 Tramite Respectivo</option>
+                            <option value="">04 Docuemnto Autorizado</option>
+                            <option value="">05 Emitir Informe</option>
+                        </select>
+
+                        <select class="main__form-select-document-priority">
+                            <option value="">Alta</option>
+                            <option value="">Media</option>
+                            <option value="">Baja</option>
+                        </select>
                     </div>
-                    <select class="main__form-select-office-worker">
-                        <option value="">Joseph Peñafiel</option>
-                    </select>
-
-                    <select class="main__form-select-document-indication">
-                        <option value="">01 Urgente</option>
-                        <option value="">02 Para conocimiento y fines </option>
-                        <option value="">03 Tramite Respectivo</option>
-                        <option value="">04 Docuemnto Autorizado</option>
-                        <option value="">05 Emitir Informe</option>
-                    </select>
-                    <select class="main__form-select-document-priority">
-                        <option value="">Alta</option>
-                        <option value="">Media</option>
-                        <option value="">Baja</option>
-                    </select>
-
                 </form>
             </div>
 
         </main>
         <footer class="footer">
             <div class="footer-container">
-                <h2>Nombres y Apellidos</h2>
-                <p>Sistema de Tramite Documentario 3.0.0.20201201 | AMAG - 2022</p>
+                <h2 class="h2">Nombres y Apellidos</h2>
+                <p class="p">Sistema de Tramite Documentario 3.0.0.20201201 | AMAG - 2022</p>
             </div>
         </footer>
     </div>

@@ -1,22 +1,25 @@
+/* importacion de otros archivos css al principal
+@import url(); */
+
 .body{
     margin: 0;
     height: 100vh;
     background: #5a5af1;
     overflow-y: hidden;
+    font-family: 'Poppins', sans-serif; 
 }
 
 
 .body-container{
     padding: 1.25rem;
-    /* background-color:; */
     display: grid;
-    gap: 20px;
+    gap: 1.25rem;
     min-height: 100%; 
     grid-template-areas: "header"
-                         "main "
+                         "main"
                          "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 1fr 70px;
+    grid-template-rows: minmax(70px,auto) 1fr minmax(70px,auto);
     /* grid-template-columns: min-content 1fr 1fr;
     grid-template-rows:60px 1fr 1fr; */
 }
@@ -31,6 +34,7 @@ border: 0.25rem solid black;
     max-height: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .header__logo{
     margin: 0;
@@ -71,35 +75,79 @@ grid-area:main;
 .main__form{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    background-color: bisque;
+    gap: 1rem;
 }
-
+/*select */
 .main__form-group-select{
-    width: 400px;
+    max-width: 900px;
+    min-width: 500px;
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .main__form-label{
-align-self: center;
-}
-
-
-.main__form-group-input{
-    width: 400px;
-    display: flex;
-    gap: 1rem;
-}
-
-.main__form-label{
-    align-self: center;
-}
-.main__form-text{
-    align-self: center;
+/* align-self: center; */
 }
 
 .main__form-select-document-type{
-    align-self: center;
+    border: 0;
 }
+/*input*/
+.main__form-group-input{
+    max-width: 900px;
+    min-width: 500px;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.main__form-text{
+    padding: 0;
+    border: 0;
+    min-width: 200px;
+}
+
+/*textarea*/
+
+.main__form-group-text-area{
+    max-width: 900px;
+    min-width: 500px;
+    display: flex;
+    gap: 1rem;
+}
+
+.main__form-text-area{
+    min-width: 278px;
+    padding: 0;
+    border: 0;
+}
+
+/*button*/
+.main__form-group-button{
+    width: 900px;
+    padding: 0;
+    border: 0;
+    
+}
+
+
+
+
+
+/* .main__form-text{
+    align-self: center;
+    min-width: 200px;
+} */
+
+
+
+/* .main__form-select-document-type{
+    align-self: center;
+} */
+
+
 /*Footer*/
 .footer{
 grid-area:footer;
@@ -148,3 +196,6 @@ min-width: 900px;
 } */
 
 
+/* @media (min-width: 600px) {
+    
+  } */
