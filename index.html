@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/css/normalize.css">
     <link rel="stylesheet" href="styles/css/index1.css">
     <!-- <link rel="stylesheet" href="styles/css/newstyle2.css"> -->
     <!--Fuente-->
@@ -83,12 +84,16 @@
                     </div>
                     <div class="main__form-group-input-file">
                         <label class="main__form-label">Adjuntar Archivo(Menores o iguales a 15MB)</label>
-                        <div class="main_form-input-file-container">
-                            <button class="main_form-input-file-container-button" disabled>
-                                <span class="fas fa-upload main__form-input-file-icon">Subir Archivo</span>
-                                <input class="main__form-file" type="file" />
-                            </button>
+                        <div class="main__form-button-file">
+                        <span class="fas fa-upload main__form-button-icon"> Subir Archivos</span>
+                        <input type="file" class="main__form-input-file"/>
                         </div>
+                        <!-- <div class="main_form-input-file-container">
+                            <button class="main_form-input-file-container-button" disabled>
+                                <input class="main__form-input-file" type="file" />
+                                <span class="fas fa-upload main__form-input-file-icon">Subir Archivo</span>
+                            </button>
+                        </div> -->
                         <button class="main__form-button">Subir mas Archivos</button>
                     </div>
 
