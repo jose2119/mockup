@@ -64,7 +64,7 @@
                     </div>
                     <div class="main__form-group-input-text">
                         <label class="main__form-label">Fecha de Registro:</label>
-                        <input class="main__form-text" type="text" />
+                        <input class="main__form-text" type="text" value="28/11/1996" />
                     </div>
                     <div class="main__form-group-text-area">
                         <label class="main__form-label">Asunto:</label>
@@ -74,20 +74,22 @@
                         <label class="main__form-label">Observaciones:</label>
                         <textarea class="main__form-text-area"></textarea>
                     </div>
-                    <div class="main__form-group-input-text">
+                    <div class="main__form-group-input-text main__form-group-input-text--page">
                         <label class="main__form-label">Folios:</label>
-                        <input class="main__form-text" type="text" />
+                        <input class="main__form-text main__form-text--page" type="text" />
                     </div>
                     <div class="main__form-group-button">
                         <label class="main__form-label">Referencias:</label>
                         <button class="main__form-button">Añadir Referencia</button>
                     </div>
                     <div class="main__form-group-input-file">
-                        <label class="main__form-label">Adjuntar Archivo(Menores o iguales a 15MB)</label>
-                        <div class="main__form-button-file">
-                        <span class="fas fa-upload main__form-button-icon"> Subir Archivos</span>
-                        <input type="file" class="main__form-input-file"/>
-                        </div>
+                        <section class="main__form-file-container">
+                            <label class="main__form-label">Adjuntar Archivo(Menores o iguales a 15MB)</label>
+                            <div class="main__form-button-file">
+                                <span class="fas fa-upload main__form-button-icon"> Subir Archivos</span>
+                                <input type="file" class="main__form-input-file" />
+                            </div>
+                        </section>
                         <!-- <div class="main_form-input-file-container">
                             <button class="main_form-input-file-container-button" disabled>
                                 <input class="main__form-input-file" type="file" />
@@ -97,11 +99,11 @@
                         <button class="main__form-button">Subir mas Archivos</button>
                     </div>
 
-                    <div class="main__form-group-input-text">
+                    <div class="main__form-group-input-text main__form-group-input-text--link">
                         <label class="main__form-label">Enlace de archivos para archivos mayores a 15MB:</label>
                         <input class="main__form-text" type="text" />
                     </div>
-                    <div class="main__form-group-select">
+                    <div class="main__form-group-select main__form-group-select--document">
                         <label class="main__form-label">Documento:</label>
                         <select class="main__form-select-document-address">
                             <option value="">Seleccione</option>
@@ -109,8 +111,8 @@
                             <option value="">Personal</option>
                         </select>
                     </div>
-                    <div class="main__form-group-select">
-                        <label class="main__form-label">Oficina</label>
+                    <div class="main__form-group-select main__form-group-select--office">
+                        <label class="main__form-label">Oficina: </label>
                         <select class="main__form-select-office">
                             <option value="">Seleccione Oficina</option>
                             <option value="">Adquisiciones</option>
@@ -143,8 +145,8 @@
         </main>
         <footer class="footer">
             <div class="footer-container">
-                <h2 class="h2">Nombres y Apellidos</h2>
-                <p class="p">Sistema de Tramite Documentario 3.0.0.20201201 | AMAG - 2022</p>
+                <p class="footer__name">Nombres y Apellidos</p>
+                <p class="footer__credits">Sistema de Tramite Documentario 3.0.0.20201201 | AMAG - 2022</p>
             </div>
         </footer>
     </div>
